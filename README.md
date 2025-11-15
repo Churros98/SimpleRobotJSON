@@ -15,14 +15,16 @@ The description can be used with [unrobot](https://github.com/Churros98/unrobot)
 
 ## Installation
 1. Copy the repository folder (SimpleRobotJSON) to:
-    MacOS: `~/Library/Application Support/Autodesk/Autodesk Fusion 360/API/Scripts/`
-    Windows: `C:\Users\<YourUsername>\AppData\Local\Autodesk\Autodesk Fusion 360\API\Scripts\`
+    1. MacOS: `~/Library/Application Support/Autodesk/Autodesk Fusion 360/API/Scripts/`
+    2. Windows: `C:\Users\<YourUsername>\AppData\Local\Autodesk\Autodesk Fusion 360\API\Scripts\`
 
 2. Open Fusion 360 → Scripts and Add-Ins → My Scripts, select SimpleRobotJSON and Run.
 
 ## Usage
-- Run the script from Fusion 360. The script will create components and joints in the active design.
-- Use the generated json with "unrobot" library.
+- Create your robot using Assembly, add constraints, and set this position in "sleep" mode.
+- The base component of the robot (the root) need to be called "base_link".
+- Run the script from Fusion 360. The script a description from components and joints in the active design.
+- Use the generated json with [unrobot](https://github.com/Churros98/unrobot) library.
 
 ## Troubleshooting
 - Script doesn't appear: ensure folder is under the Fusion 360 Scripts path and that manifest/entry files exist.
