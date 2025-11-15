@@ -2,6 +2,8 @@
 
 SimpleRobotJSON is a Fusion 360 Python script that generate a JSON description of a simple robot from joints in the active Fusion 360 document. It is designed to be dropped into Fusion 360's Scripts folder and run from the Scripts and Add-Ins dialog.
 
+The description can be used with [unrobot](https://github.com/Churros98/unrobot) library.
+
 ## Features
 - Create a compact JSON robot description
 - Create simple joint relationships between each component

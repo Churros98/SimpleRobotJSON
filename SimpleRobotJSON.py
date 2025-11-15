@@ -14,13 +14,13 @@ def get_rotation_axis(joint_motion):
     joint_motion = adsk.fusion.RevoluteJointMotion.cast(joint_motion)
 
     if joint_motion.rotationAxis == adsk.fusion.JointDirections.XAxisJointDirection:
-        return (1, 0, 0)
+        return (True, False, False)
     elif joint_motion.rotationAxis == adsk.fusion.JointDirections.YAxisJointDirection:
-        return (0, 1, 0)
+        return (False, True, False)
     elif joint_motion.rotationAxis == adsk.fusion.JointDirections.ZAxisJointDirection:
-        return (0, 0, 1)
+        return (False, False, True)
     else:
-        return (0, 0, 0)
+        return (False, False, False)
 
 def create_header(data: dict):
     data['name'] = app.activeDocument.name
